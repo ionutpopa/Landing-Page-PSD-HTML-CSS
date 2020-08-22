@@ -207,11 +207,18 @@ body {
           font-size: 18px;
           text-align: left;
           .mark-1 {
+            color: #41e0d8;
             position: absolute;
-            margin-left: 5vh;
-            margin-top: 3vh;
+            margin-left: 7vh;
+            margin-top: 1vh;
+            -moz-transform: scale(1, -1);
+            -webkit-transform: scale(1, -1);
+            -o-transform: scale(1, -1);
+            -ms-transform: scale(1, -1);
+            transform: scale(-1, -1);
           }
           .mark-2 {
+            color: #41e0d8;
             position: absolute;
             margin-top: -3vh;
             margin-left: 82vh;
@@ -221,15 +228,17 @@ body {
             padding: 0 80px; // DEPENDENTI 3
             padding-top: 8vh;
             h5 {
-              &:nth-child(1){
+              &:nth-child(1) {
                 margin-bottom: 2vh;
               }
-              &:nth-child(2){
+              &:nth-child(2) {
                 margin-bottom: 2vh;
               }
             }
           }
           h6 {
+            
+            color: #41e0d8;
             padding: 0 80px; // DEPENDENTI 3
           }
         }

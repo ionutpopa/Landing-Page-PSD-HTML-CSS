@@ -261,12 +261,16 @@ body {
 }
 
 .section-c .bottom-1 .big-swiper-wrapper-2 .swiper-2 .swiper-slide .mark-1 {
+  color: #41e0d8;
   position: absolute;
-  margin-left: 5vh;
-  margin-top: 3vh;
+  margin-left: 7vh;
+  margin-top: 1vh;
+  -webkit-transform: scale(1, -1);
+  transform: scale(-1, -1);
 }
 
 .section-c .bottom-1 .big-swiper-wrapper-2 .swiper-2 .swiper-slide .mark-2 {
+  color: #41e0d8;
   position: absolute;
   margin-top: -3vh;
   margin-left: 82vh;
@@ -287,6 +291,7 @@ body {
 }
 
 .section-c .bottom-1 .big-swiper-wrapper-2 .swiper-2 .swiper-slide h6 {
+  color: #41e0d8;
   padding: 0 80px;
 }
 
