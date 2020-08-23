@@ -138,7 +138,6 @@ body {
   }
   .right-2 {
     text-align: center;
-
     // Swiper 1
     .big-swiper-wrapper-1 {
       animation: entrence 0.6s ease;
@@ -192,6 +191,8 @@ body {
   .top-1 {
     display: flex;
     flex-direction: column;
+    animation: entrence 0.4s ease;
+    animation-fill-mode: backwards;
     h1 {
       color: white;
       font-size: 30px;
@@ -205,6 +206,8 @@ body {
     }
   }
   .bottom-1 {
+    animation: entrence 0.4s ease;
+    animation-fill-mode: backwards;
     display: flex;
     margin: 0 auto;
     text-align: center;
@@ -215,6 +218,8 @@ body {
     }
     // Swiper 2
     .big-swiper-wrapper-2 {
+      animation: entrence 0.6s ease;
+      animation-fill-mode: backwards;
       width: 700px;
       height: 250px;
       margin-left: 20px;
@@ -276,7 +281,7 @@ body {
             padding: 0 80px; // DEPENDENTI 3
             padding-top: 2vh;
             margin-left: 1vh;
-            margin-bottom: 2vh;
+            margin-bottom: 3vh;
           }
         }
         .swiper-pagination-2 {
@@ -303,6 +308,7 @@ body {
   text-align: center;
   z-index: 1;
   .top-2 {
+    animation: entrence 0.5s ease-out;
     color: white;
     h1 {
       margin-top: 10vh;
@@ -318,6 +324,7 @@ body {
   }
   .bottom-2 {
     input {
+      animation: downToUp 0.6s ease;
       &:nth-child(1) {
         width: 350px;
         height: 50px;
@@ -357,14 +364,14 @@ body {
 }
 
 /* Animations */
-@keyframes drop {
+@keyframes downToUp {
   0% {
     opacity: 0;
-    transform: translateY(-80px);
+    transform: translateY(50px);
   }
-  100% {
+  50% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(-30px);
   }
 }
 
@@ -378,5 +385,157 @@ body {
     opacity: 1;
     transform: scale(1);
     filter: hue-rotate(0deg);
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 800px) {
+  // No more grid for mobile
+  body {
+    overflow-x: hidden;
+  }
+  .grid-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .section-a {
+    display: flex;
+    flex-direction: column;
+    #bg-img {
+      margin-left: 20px;
+    }
+    .nav-grid {
+      margin-top: 2vh;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      div {
+        img {
+          width: 40px;
+          margin-top: 5px;
+          margin-left: 10px;
+        }
+      }
+      ul {
+        li {
+          &:nth-child(1) {
+            display: none;
+          }
+          &:nth-child(2) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .main-view {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      .left-1 {
+        margin-top: 8vh;
+        img {
+          display: none;
+        }
+      }
+      .right-1 {
+        div {
+          &:nth-child(1) {
+            color: #262a34;
+            i {
+              color: #262a34;
+            }
+          }
+          &:nth-child(2) {
+            p {
+              background: #262a347a;
+              color: #fff;
+            }
+          }
+        }
+        margin: 0 auto;
+      }
+    }
+  }
+  .section-b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 6vh;
+    .left-2 {
+      width: 100%;
+      text-align: center;
+      div {
+        margin-left: 0%;
+        &:nth-child(3) {
+          position: relative;
+          padding-top: 2.3vh;
+          padding-left: 0vh;
+          margin: 0 auto;
+          margin-bottom: 10vh;
+          height: 8vh;
+          width: 23vh;
+          background-color: #41e0d8;
+        }
+      }
+    }
+    .right-2 {
+      .big-swiper-wrapper-1 {
+        display: none;
+      }
+    }
+  }
+  .section-c {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .top-1 {
+      margin-bottom: 5vh;
+      h1 {
+        font-size: 25px;
+        margin-top: 30px;
+      }
+    }
+    .bottom-1 {
+      width: 100%;
+      img {
+        display: none;
+      }
+      .big-swiper-wrapper-2 {
+        margin-left: 0%;
+        margin: 0 auto;
+        width: 100%;
+        height: 250px;
+        background-image: none;
+        background: white;
+        .swiper-2 {
+          width: 595px;
+          height: 340px;
+          margin-left: -10vh;
+          .swiper-pagination-2 {
+            padding-right: 0px; // DEPENDENTI 2
+          }
+          .swiper-slide {
+            .mark-1 {
+              display: none;
+            }
+            .mark-2 {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-d {
+    .bottom-2 {
+      input {
+        margin-bottom: 2vh;
+      }
+    }
   }
 }

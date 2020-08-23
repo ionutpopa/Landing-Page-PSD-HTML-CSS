@@ -50,3 +50,7 @@ var swiper_2 = new Swiper(".swiper-2", {
     return '<span class="' + className + '">' + (index + 1) + "</span>";
   },
 });
+
+if (screenWidth < 800) {
+  sectionB.style.height = screenHeight / 1.3 + "px";
+}
