@@ -17,8 +17,8 @@ const backgroundImage1 = document.getElementById("bg-img");
 sectionA.style.height = screenHeight + "px";
 sectionB.style.height = screenHeight + "px";
 sectionC.style.height = screenHeight + "px";
-sectionD.style.height = screenHeight + "px";
-sectionE.style.height = screenHeight + "px";
+sectionD.style.height = screenHeight / 1.5 + "px";
+sectionE.style.height = screenHeight / 2.5 + "px";
 
 backgroundImage1.style.width = screenWidth - 17 + "px";
 backgroundImage1.style.height = screenHeight + "px";
@@ -27,6 +27,7 @@ backgroundImage1.style.height = screenHeight + "px";
 var swiper_1 = new Swiper(".swiper-1", {
   slidesPerView: 2,
   spaceBetween: 10,
+  autoplay: true,
   pagination: {
     el: ".swiper-pagination-1",
     clickable: true,
@@ -40,6 +41,7 @@ var swiper_1 = new Swiper(".swiper-1", {
 var swiper_2 = new Swiper(".swiper-2", {
   slidesPerView: 1,
   spaceBetween: 100,
+  autoplay: true,
   pagination: {
     el: ".swiper-pagination-2",
     clickable: true,
